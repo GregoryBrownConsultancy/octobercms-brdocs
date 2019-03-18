@@ -1,0 +1,31 @@
+# ======================================
+#  Add a Document Tab Field Definitions
+# ======================================
+cpf:
+    label: zombiecorp.brdocs::lang.documents.cpf
+    tab: zombiecorp.brdocs::lang.tab.documents
+    span: auto
+rg:
+    label: zombiecorp.brdocs::lang.documents.rg
+    tab: zombiecorp.brdocs::lang.tab.documents
+    span: auto
+cnh:
+    label: zombiecorp.brdocs::lang.documents.cnh
+    tab: zombiecorp.brdocs::lang.tab.documents
+    span: auto
+titulo_de_eleitor:
+    label: zombiecorp.brdocs::lang.documents.titulo_de_eleitor
+    tab: zombiecorp.brdocs::lang.tab.documents
+    span: auto
+passaporte:
+    label: zombiecorp.brdocs::lang.documents.passaporte
+    tab: zombiecorp.brdocs::lang.tab.documents
+    span: auto
+pis:
+    label: zombiecorp.brdocs::lang.documents.pis
+    tab: zombiecorp.brdocs::lang.tab.documents
+    span: auto
+nis:
+    label: zombiecorp.brdocs::lang.documents.nis
+    tab: zombiecorp.brdocs::lang.tab.documents
+    span: auto

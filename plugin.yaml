@@ -1,0 +1,6 @@
+plugin:
+    name: 'zombiecorp.brdocs::lang.plugin.name'
+    description: 'zombiecorp.superuser::lang.plugin.description'
+    author: Zombiecorp
+    icon: oc-icon-user-plus
+    homepage: ''
