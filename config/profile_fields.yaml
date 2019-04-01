@@ -29,3 +29,8 @@ nis:
     label: zombiecorp.brdocs::lang.documents.nis
     tab: zombiecorp.brdocs::lang.tab.documents
     span: auto
+sort_tab:
+    label: sorttab
+    tab: zombiecorp.brdocs::lang.tab.documents
+    hidden: true
+    default: 100

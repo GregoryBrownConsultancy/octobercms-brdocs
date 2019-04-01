@@ -51,6 +51,21 @@ class Plugin extends PluginBase
             $configFile = plugins_path('zombiecorp/brdocs/config/profile_fields.yaml');
             $config = Yaml::parse(File::get($configFile));
             $widget->addTabFields($config);
+            $fields = $widget->getTabs()->primary->fields;
+
+            foreach ($fields as $fk=>$fv){
+                if (isset($fields[$fk]['sort_tab'])){
+                    $fields[$fk]['tabOrder']=$fields[$fk]['sort_tab']->value;
+                }else{
+                    $fields[$fk]['tabOrder']=0;
+                }
+            }
+            array_multisort(array_column($fields,'tabOrder', SORT_ASC), $fields);
+
+            foreach ($fields as $fk=>$fv){
+                unset($fields[$fk]['tabOrder']);
+            }
+            $widget->getTabs()->primary->fields = $fields;
         });
     }
 
